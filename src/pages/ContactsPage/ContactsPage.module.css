@@ -1,0 +1,7 @@
+.container {
+    padding: 40px;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #4a2e12;
+    background-color: #fdf7f2;
+    min-height: 100vh;
+}

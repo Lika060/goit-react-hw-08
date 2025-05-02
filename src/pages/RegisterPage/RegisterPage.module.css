@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #eadcf3;
+    color: black;
+    text-align: center;
+    border: 3px solid #4a2e12;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #4a2e12;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 100px;
+}

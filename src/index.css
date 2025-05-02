@@ -1,0 +1,25 @@
+@import '@fontsource/medievalsharp';
+
+body {
+  margin: 0;
+  font-family: 'MedievalSharp', cursive;
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #e0c97f;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.loading {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 100px;
+  color: #ffd700;
+}

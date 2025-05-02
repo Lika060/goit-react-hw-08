@@ -1,0 +1,15 @@
+.header {
+    background-color: #2d1b3a;
+    border-bottom: 2px solid #f2c94c;
+    padding: 16px 0;
+    box-shadow: 0 4px 8px rgba(242, 201, 76, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

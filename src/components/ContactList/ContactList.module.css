@@ -1,0 +1,49 @@
+.list {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    background-color: #fdf6e3;
+    border: 2px solid #654321;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #5d3a00;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #d2b48c;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.name {
+    font-weight: bold;
+    color: #2a1a00;
+}
+
+.number {
+    margin-left: auto;
+    margin-right: 16px;
+    color: #4b3621;
+}
+
+.button {
+    padding: 6px 12px;
+    background-color: #740001;
+    color: #fceabb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a80000;
+}
