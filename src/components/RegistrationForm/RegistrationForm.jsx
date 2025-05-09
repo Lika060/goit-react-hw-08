@@ -1,17 +1,19 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-// import * as Yup from 'yup';
+import * as Yup from 'yup';
+
 import styles from './RegistrationForm.module.css';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/contacts/operations';
+// import { register } from '../../redux/contacts/operations';
+import { register } from '../../redux/auth/operations';
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
 
-//   const validationSchema = Yup.object().shape({
-//     name: Yup.string().required('Імʼя обовʼязкове'),
-//     email: Yup.string().email('Невірний email').required('Email обовʼязковий'),
-//     password: Yup.string().min(6, 'Мінімум 6 символів').required('Пароль обовʼязковий'),
-//   });
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required('Імʼя обовʼязкове'),
+    email: Yup.string().email('Невірний email').required('Email обовʼязковий'),
+    password: Yup.string().min(6, 'Мінімум 6 символів').required('Пароль обовʼязковий'),
+  });
 
   const handleSubmit = (values, { resetForm }) => {
     dispatch(register(values));
@@ -21,7 +23,7 @@ const RegistrationForm = () => {
   return (
     <Formik
       initialValues={{ name: '', email: '', password: '' }}
-    //   validationSchema={validationSchema}
+      validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
       <Form className={styles.form}>
@@ -40,7 +42,8 @@ const RegistrationForm = () => {
           <Field type="password" name="password" />
           <ErrorMessage name="password" component="div" className={styles.error} />
         </label>
-        <button type="submit">Зареєструватися</button>
+              <button type="submit">Зареєструватися</button>
+              
       </Form>
     </Formik>
   );
