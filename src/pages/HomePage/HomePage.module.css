@@ -2,6 +2,8 @@
     text-align: center;
     padding: 100px 20px;
     font-family: 'Cinzel Decorative', cursive;
+    align-items: center;
+    justify-content: center;
     color: #4a2e12;
     background-image: url('/hogwarts-bg.jpg');
     background-size: cover;
